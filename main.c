@@ -65,7 +65,7 @@ int twinprimes(int limit) {
 
 
 int main() {
-    float fa = 3, fb = 4, fc = 32.49, fd = 0;
+    float fa = 3, fb = 4, fc = 32.49f, fd = 0;
     int a = 24, b = 12, c = 5;
     int maxerg, minerg;
     int ggterg;
