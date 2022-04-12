@@ -27,13 +27,13 @@ int runde(float a) {
 }
 
 int min(int a, int b, int c) {
-    if (a < b & a < c) return a;
+    if (a < b && a < c) return a;
     else if (b < c) return b;
     else return c;
 }
 
 int max(int a, int b, int c) {
-    if (a > b & a > c) return a;
+    if (a > b && a > c) return a;
     else if (b > c) return b;
     else return c;
 }
@@ -55,7 +55,7 @@ bool istprim(int a) {
 
 int twinprimes(int limit) {
     for (int i = 3; i < limit; i++) {
-        if (istprim(i) & istprim(i + 2)) {
+        if (istprim(i) && istprim(i + 2)) {
             printf("Primzwil: %d,%d\n", i, i + 2);
             i+=2;
         }
@@ -66,7 +66,7 @@ int twinprimes(int limit) {
 
 int main() {
     float fa = 3, fb = 4, fc = 32.49, fd = 0;
-    int a = 14, b = 11, c = 5;
+    int a = 24, b = 12, c = 5;
     int maxerg, minerg;
     int ggterg;
     int sumerg;
@@ -89,7 +89,7 @@ int main() {
     printf("max of %d %d %d is: %d\n", a, b, c, maxerg);
     printf("min of %d %d %d is: %d\n", a, b, c, minerg);
     printf("ggt of %d,%d is: %d\n", a, b, ggterg);
-    printf("Istprim: %d", (int) primerg);
-    twinprimes(999999);
+    printf("Istprim: %d\n", (int) primerg);
+    twinprimes(100);
     return 0;
 }
